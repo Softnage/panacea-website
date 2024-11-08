@@ -758,7 +758,7 @@ ul {
 		position: absolute;
 		right: 0;
 		bottom: -1.5rem;
-		background: #da1e26;
+		background: #da1e277c;
 		color: #fff;
 		width: 60%;
 		padding: 2.5rem;
@@ -780,9 +780,11 @@ ul {
 
 .services-body .services-overlay{
 	z-index: 2;
-	background: #da1e26;
+	background: #da1e27ce;
+	border: 1px solid #02864A;
 	color: #fff;
 	padding: 1.87rem;
+	line-height: 1.7;
 }
 .services-heading{
 	text-transform: uppercase;
@@ -942,6 +944,7 @@ a.header-requestbtn:before {
 	border-right: 0px;
 	padding: 0 17px;
 	color: #5f5f5f;
+	font-weight: 800;
 }
 
 #main-navigation-wrapper .nav>li:last-child>a {
@@ -13556,9 +13559,11 @@ button.btn.btn-link.btn-block:focus {
 	background-repeat: no-repeat;
 }
 
-/* #carousel .carousel-item.ferrovita {
-	background-image: url("../img/sliders/panacea-13.jpg");
-} */
+#carousel .carousel-item.ferrovita {
+	background-image: url("../img/sliders/core-values.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 #carousel .carousel-item {
 	height: 70vh;
@@ -14000,5 +14005,46 @@ button.btn.btn-link.btn-block:focus {
 	font-size: 30px;
 	color:#02864A
   }
+
+  .products-button {
+	padding: 1em 2em;
+	border: none;
+	border-radius: 5px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #02864A;
+	transition: all 1000ms;
+	font-size: 15px;
+	position: relative;
+	overflow: hidden;
+	outline: 2px solid #02864A;
+  }
+  
+  .products-button:hover {
+	color: #02864A;
+	transform: scale(1.1);
+	outline: 2px solid #70bdca;
+	box-shadow: 4px 5px 17px -4px #02864A;
+  }
+  
+  .products-button::before {
+	content: "";
+	position: absolute;
+	left: -50px;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: #02864A;
+	transform: skewX(45deg);
+	z-index: -1;
+	transition: width 1000ms;
+  }
+  
+  .products-buttton:hover::before {
+	width: 250%;
+  }
+  
 
  
