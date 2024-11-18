@@ -567,6 +567,12 @@ ul {
 	object-position: bottom;
 	border-radius: 10px;
 }
+
+.youtube-content .high-button{
+	justify-content: center;
+	display: flex;
+}
+
 .view-our-branches {
 	padding: 15px 25px;
 	border: unset;
@@ -580,7 +586,7 @@ ul {
 	-webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
 	box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
 	transition: all 250ms;
-	overflow: hidden;
+	overflow: hidden;	
    }
    
    .view-our-branches::before {

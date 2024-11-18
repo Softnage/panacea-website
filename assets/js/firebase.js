@@ -111,7 +111,7 @@ function checkIfLoggedIn() {
 
  
 
-fetchRecentNews();
+//fetchRecentNews();
    // Function to fetch news data from Firestore
   function fetchNews() {
     db.collection("News").orderBy('timestamp', 'desc').get()
