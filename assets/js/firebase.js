@@ -1,3 +1,15 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyAfjOH7Z-5yuGZ6Rw_WUPpM59r65BgryR4",
+  authDomain: "panaceagh.firebaseapp.com",
+  projectId: "panaceagh",
+  storageBucket: "panaceagh.appspot.com",
+  messagingSenderId: "1031765898065",
+  appId: "1:1031765898065:web:150363850ec689aa4c9970"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore();
 document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -19,18 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const firebaseConfig = {
-    apiKey: "AIzaSyAfjOH7Z-5yuGZ6Rw_WUPpM59r65BgryR4",
-    authDomain: "panaceagh.firebaseapp.com",
-    projectId: "panaceagh",
-    storageBucket: "panaceagh.appspot.com",
-    messagingSenderId: "1031765898065",
-    appId: "1:1031765898065:web:150363850ec689aa4c9970"
-  };
-  
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  var db = firebase.firestore();
+
 
 
 // Function to check if user is logged in
@@ -186,43 +187,43 @@ function checkIfLoggedIn() {
  
   
   
-  // Create Blog post
-  
-  document.getElementById("blogForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
-  
-  // Get form values
-  const date = document.getElementById("date").value;
-  const title = document.getElementById("title").value;
-  const content = document.getElementById("content").value;
-  const thumbnail = document.getElementById("imageurl").value;
-  var PTimestamp = firebase.firestore.FieldValue.serverTimestamp();
-  
-  // Add data to Firestore
-  db.collection("News").add({
-      date: date,
-      tittle: title,
-      content: content,
-      thumbnail: thumbnail,
-      timestamp: PTimestamp
-  })
-  .then((docRef) => {
-      console.log("Document written with ID: ", docRef.id);
-      alert("Blog post added successfully!");
-      // Optionally, you can redirect the user or show a success message here
-  })
-  .catch((error) => {
-      console.error("Error adding document: ", error);
-      alert("Blog post Failed!");
-      // Optionally, you can show an error message to the user here
-  });
-  });
+
 
   
 });
 
 
-
+  // Create Blog post
+  
+  document.getElementById("blogForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Get form values
+    const date = document.getElementById("date").value;
+    const title = document.getElementById("title").value;
+    const content = document.getElementById("content").value;
+    const thumbnail = document.getElementById("imageurl").value;
+    var PTimestamp = firebase.firestore.FieldValue.serverTimestamp();
+    
+    // Add data to Firestore
+    db.collection("News").add({
+        date: date,
+        tittle: title,
+        content: content,
+        thumbnail: thumbnail,
+        timestamp: PTimestamp
+    })
+    .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+        alert("Blog post added successfully!");
+        // Optionally, you can redirect the user or show a success message here
+    })
+    .catch((error) => {
+        console.error("Error adding document: ", error);
+        alert("Blog post Failed!");
+        // Optionally, you can show an error message to the user here
+    });
+    });
   // Function to authenticate user
 function loginUser(email, password) {
   firebase.auth().signInWithEmailAndPassword(email, password)
