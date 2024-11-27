@@ -94,7 +94,7 @@
     border: 2px solid #fafafa;
     background: none;
     padding: 0.6rem 1.2rem;
-    color: #fff;
+    color: #fff !important;
     font-weight: 500;
     font-size: 0.95rem;
     letter-spacing: 0.5px;
@@ -369,4 +369,8 @@
     .btn1 {
       padding: 0.45rem 1.2rem;
     }
+  }
+
+  textarea::placeholder{
+    color: white;
   }
