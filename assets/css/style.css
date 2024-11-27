@@ -413,7 +413,7 @@ ul {
   -ms-overflow-style: none;
   scrollbar-width: none;
   margin: 0 auto;
-  padding: 48px 48px 0 48px;
+  /* padding: 48px 48px 0 48px; */
 
 }
 
@@ -14026,6 +14026,7 @@ button.btn.btn-link.btn-block:focus {
 	position: relative;
 	overflow: hidden;
 	outline: 2px solid #02864A;
+	margin: 0 auto !important;
   }
   
   .products-button:hover {
