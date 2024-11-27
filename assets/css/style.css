@@ -13343,7 +13343,7 @@ button.btn.btn-link.btn-block:focus {
 /* .emergency-call */
 /**************************************************/
 .emergency-call {
-	padding-top: 20px;
+	/* padding-top: 20px; */
 	padding-bottom: 20px;
 	/* background-color: #f4f4f4; */
 	/* background-image: url(../img/hero-bg.png); */
@@ -13503,7 +13503,7 @@ button.btn.btn-link.btn-block:focus {
 /*---------- Start .emergency-call responsive ----------*/
 .emergency-call {
 	padding-top: 40px;
-	padding-bottom: 100px;
+	/* padding-bottom: 100px; */
 }
 
 .emergency-call__items {
