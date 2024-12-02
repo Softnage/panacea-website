@@ -14054,4 +14054,11 @@ button.btn.btn-link.btn-block:focus {
   }
   
 
+
+  #quality-text{
+	font-size: 12px;
+	margin-left: -30px;
+	font-weight: 600;
+	color: black;
+  }
  
