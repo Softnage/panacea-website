@@ -3104,10 +3104,10 @@ button:focus-within {
 	}
 }
 
-@media (min-width: 1200px) and (max-width: 1318px) {
+/* @media (min-width: 1200px) and (max-width: 1318px) {
 .navbar-nav{
 	width: 100vw;
-}
+} */
 
 #loginTopBtn{
 	visibility: visible;
