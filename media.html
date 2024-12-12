@@ -7,12 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Panacea |Media</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        a{
+            text-decoration: none !important;
+        }
+    </style>
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <link href="assets/css/all.min.css" rel="stylesheet">
     <link href="assets/css/fontawesome.css" rel="stylesheet">
     <link href="assets/css/icofont.min.css" rel="stylesheet">
-    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="assets/css/owl.carousel.min.css" rel="stylesheet"> -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -88,7 +94,7 @@
                                 <li><a href="media.html"><i class="fas fa-picture-o"> </i> Corporate Social Responsibility (CSR)</a></li>
                                 <li><a href="blog.html"><i class="fas fa-globe"> </i> Our Blog</a></li>
                                 <li><a href="faq.html"><i class="fas fa-question-circle"> </i> FAQs</a></li>
-                                <li><a href="oursocialmedia.html"><i class="fas fa-group"> </i> Social Media</a></li>
+                                <!-- <li><a href="oursocialmedia.html"><i class="fas fa-group"> </i> Social Media</a></li> -->
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -128,213 +134,109 @@
             </div>
         </div>
     </div>
-    <!-- hero-about-area End -->
 
-    <!-- Portfolio area Start -->
-    <section class="videos">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-md-6 col-sm-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <video class="embed-responsive-item" controls>
-                            <source src="assets/videos/panacea-csr-video.mp4">
-                        </video>
+    <section class="image-video-gallery">
+        <div class="container py-5">
+            <div class="row py-5 justify-content-center align-items text-center">
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Video Gallery</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Retail</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-wholesale-tab" data-bs-toggle="pill" data-bs-target="#pills-wholesale" type="button" role="tab" aria-controls="pills-wholesale" aria-selected="false">Wholesale</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-launch-tab" data-bs-toggle="pill" data-bs-target="#pills-launch" type="button" role="tab" aria-controls="pills-launch" aria-selected="false">Product Launch</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-photo-tab" data-bs-toggle="pill" data-bs-target="#pills-photo" type="button" role="tab" aria-controls="pills-photo" aria-selected="false">Photo Gallery</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <video controls class="img-fluid">
+                                    <source src="./assets/videos/panacea-csr-video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="col-md-6">
+                                <video controls class="img-fluid">
+                                    <source src="./assets/videos/panacea-trailer-new.mp4" type="video/mp4">
+                                </video>
+                            </div>
+
+                            <div class="col-md-6">
+                                <video controls class="img-fluid">
+                                    <source src="./assets/videos/panacea-asokwa-trailer.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="col-md-6">
+                                <video controls class="img-fluid">
+                                    <source src="./assets/videos/panacea-adenta.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2p5h8r-Bjq8"></iframe>
+                    <div class="tab-pane fade justify-content-center" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="gallery">
+                            <img src="./assets/img/retail-shops/philos-31.jpg" alt="Image 1" data-index="0">
+                            <img src="./assets/img/retail-shops/philos-63.jpg" alt="Image 2" data-index="1">
+                            <img src="./assets/img/retail-shops/philos-65.jpg" alt="Image 3" data-index="2">
+                            <img src="./assets/img/retail-shops/philos-68.jpg" alt="Image 4" data-index="3">
+                            <img src="./assets/img/retail-shops/philos-66.jpg" alt="Image 5" data-index="4">
+                            <img src="./assets/img/retail-shops/retial-10.jpg" alt="Image 5" data-index="5">
+                            <img src="./assets/img/retail-shops/retail-9.jpg" alt="Image 5" data-index="6">
+                            <img src="./assets/img/retail-shops/philos-49.jpg" alt="Image 5" data-index="7">
+                        </div>
                     </div>
+                    <div class="tab-pane fade justify-content-center" id="pills-wholesale" role="tabpanel" aria-labelledby="pills-wholesale-tab" tabindex="0">
+                        <div class="gallery">
+                            <img src="./assets/img/wholesale-shops/whole-1.jpg" alt="Image 1" data-index="0">
+                            <img src="./assets/img/wholesale-shops/whole-22.jpg" alt="Image 2" data-index="1">
+                            <img src="./assets/img/wholesale-shops/whole-3.jpg" alt="Image 3" data-index="2">
+                            <img src="./assets/img/wholesale-shops/whole-4.jpg" alt="Image 4" data-index="3">
+                            <img src="./assets/img/wholesale-shops/whole-5.jpg" alt="Image 5" data-index="4">
+                            <img src="./assets/img/wholesale-shops/whole-6.jpg" alt="Image 5" data-index="5">
+                            <img src="./assets/img/wholesale-shops/whole-7.jpg" alt="Image 5" data-index="6">
+                            <img src="./assets/img/wholesale-shops/whole-8.jpg" alt="Image 5" data-index="7">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade justify-content-center" id="pills-launch" role="tabpanel" aria-labelledby="pills-launch-tab" tabindex="0">
+                        <div class="gallery">
+                            <img src="./assets/img/products-launch/glikit-launch-1.jpg" alt="Image 1" data-index="0">
+                            <img src="./assets/img/products-launch/glikit-launch-2.jpg" alt="Image 2" data-index="1">
+                            <img src="./assets/img/products-launch/glikit-launch-3.jpg" alt="Image 3" data-index="2">
+                            <img src="./assets/img/products-launch/glikit-launch-4.jpg" alt="Image 4" data-index="3">
+                            <img src="./assets/img/products-launch/glikit-launch-5.jpg" alt="Image 5" data-index="4">
+                            <img src="./assets/img/products-launch/glikit-launch-6.jpg" alt="Image 5" data-index="5">
+                            <img src="./assets/img/products-launch/glikit-launch-7.jpg" alt="Image 5" data-index="6">
+                            <img src="./assets/img/products-launch/glikit-launch-8.jpg" alt="Image 5" data-index="7">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade justify-content-center" id="pills-photo" role="tabpanel" aria-labelledby="pills-photo-tab" tabindex="0">
+                        <div class="gallery">
+                            <img src="./assets/img/gallery/pa-33.jpg" alt="Image 1" data-index="0">
+                            <img src="./assets/img/gallery/pa-48.jpg" alt="Image 2" data-index="1">
+                            <img src="./assets/img/gallery/pa-49.jpg" alt="Image 3" data-index="2">
+                            <img src="./assets/img/gallery/pa-55.jpg" alt="Image 4" data-index="3">
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="row py-3">
-                <div class="col-md-6 col-sm-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2s8e_-aNShE"></iframe>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2s8e_-aNShE"></iframe>
-                    </div>
-                </div>
+            <div class="modal" id="modal">
+                <span class="close" id="close">&times;</span>
+                <span class="prev" id="prev">&#10094;</span>
+                <span class="next" id="next">&#10095;</span>
+                <img src="" alt="" id="modalImage">
             </div>
         </div>
     </section>
-    <div class="portfolio-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/Portfolio/i1.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3>BP Checking Tamale</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/Portfolio/i2.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3>Tamale</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/Portfolio/i3.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3>At Work</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/Portfolio/i7.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3>Free Screening</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/Portfolio/i5.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3>Our Branch</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/Portfolio/i6.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3>Panacea Asokwa(Headquaters) Kumasi</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/philos.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/philos-29.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/philos-60.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/philos-70.jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/pa (33).jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/pa (45).jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/pa (61).jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="port-wrapper">
-                        <div class="port-img">
-                            <img src="assets/img/gallery/pa (63).jpg" alt="">
-                            <div class="port-plus">
-                                <a href="#">
-                                    <h3></h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <section class="section-links mt-5 mb-5">
         <div class="container">
@@ -364,9 +266,6 @@
                       <a href="oursocialmedia.html">Social Media</a>
                     </div><!-- .box-information-->
                   </div>
-                
-     
-                
                 </div>
               </div><!-- .row-->
             </div>
@@ -471,19 +370,12 @@
               </p>
             </div>
         </div>
-        <!-- <a href="#" class="go-top"><i class="fas fa-arrow-up"></i></a> -->
     </footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery.min.js"defer></script>
-    <script src="assets/js/popper.js"defer></script>
-    <script src="assets/js/owl.carousel.min.js"defer></script>
-    <script src="assets/js/jquery-circular-progressbar-1.2.2.min.js"defer></script>
-    <script src="assets/js/bootstrap.min.js"defer></script>
-    <script src="assets/js/jquery.ui.js"defer></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"defer></script>
-    <script src="assets/js/main.js"defer></script>
+
+
+
+    <script src="./assets/js/gallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
 </body>
-
-
-<!-- Mirrored from medics.themechampion.com/html/pharmacy/media.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Mar 2024 12:21:45 GMT -->
 </html>

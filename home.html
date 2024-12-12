@@ -4,22 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            width: 80%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .modal .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .modal .prev, .modal .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .modal .prev {
+            left: 20px;
+        }
+
+        .modal .next {
+            right: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <section class="our-clients">
-        <div class="container1">
-          <div class="customer-logos slider">
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/sx9bXn46/logo.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/4x3jfQ7P/logo1.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/SQWBDsb6/logo2.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/nLj57V1Q/logo3.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/zBTctd6z/logo4.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/25stxpH9/logo5.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/yYjwCbdW/logo6.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/NfBWVcQW/logo7.png"></a></div>
-             <div class="slide"><a href="#"><img src="https://i.postimg.cc/zGP6VHTr/logo8.png"></a></div>
-          </div>
-       </div>
+    <div class="gallery">
+        <img src="./assets/img/retail-shops/philos-31.jpg" alt="Image 1" data-index="0">
+        <img src="./assets/img/retail-shops/philos-63.jpg" alt="Image 2" data-index="1">
+        <img src="./assets/img/retail-shops/philos-65.jpg" alt="Image 3" data-index="2">
+        <img src="image4.jpg" alt="Image 4" data-index="3">
+        <img src="image5.jpg" alt="Image 5" data-index="4">
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close" id="close">&times;</span>
+        <span class="prev" id="prev">&#10094;</span>
+        <span class="next" id="next">&#10095;</span>
+        <img src="" alt="" id="modalImage">
+    </div>
+
+
+        <!-- hero-about-area End -->
+
+
+    <!-- Media and gallery section -->
+
+    <section class="image-video-gallery">
+        <div class="container py-5">
+            <div class="row py-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Portfolio area Start -->
+    <section class="videos">
+        <div class="container">
+            <!-- <div class="row py-3">
+                <div class="col-md-6 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video class="embed-responsive-item" controls>
+                            <source src="assets/videos/panacea-csr-video.mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2p5h8r-Bjq8"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-6 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2s8e_-aNShE"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2s8e_-aNShE"></iframe>
+                    </div>
+                </div>
+            </div> -->
+
+            
+        </div>
+    </section>
+
+
+    <script>
+        const gallery = document.querySelectorAll('.gallery img');
+        const modal = document.getElementById('modal');
+        const modalImage = document.getElementById('modalImage');
+        const close = document.getElementById('close');
+        const prev = document.getElementById('prev');
+        const next = document.getElementById('next');
+
+        let currentIndex = 0;
+
+        function openModal(index) {
+            modal.style.display = 'flex';
+            modalImage.src = gallery[index].src;
+            currentIndex = index;
+        }
+
+        function closeModal() {
+            modal.style.display = 'none';
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : gallery.length - 1;
+            modalImage.src = gallery[currentIndex].src;
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex < gallery.length - 1) ? currentIndex + 1 : 0;
+            modalImage.src = gallery[currentIndex].src;
+        }
+
+        gallery.forEach((img, index) => {
+            img.addEventListener('click', () => openModal(index));
+        });
+
+        close.addEventListener('click', closeModal);
+        prev.addEventListener('click', showPrev);
+        next.addEventListener('click', showNext);
+
+        window.addEventListener('keydown', (e) => {
+            if (modal.style.display === 'flex') {
+                if (e.key === 'ArrowLeft') showPrev();
+                if (e.key === 'ArrowRight') showNext();
+                if (e.key === 'Escape') closeModal();
+            }
+        });
+    </script>
 </body>
 </html>
