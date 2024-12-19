@@ -14381,6 +14381,12 @@ button.btn.btn-link.btn-block:focus {
   }
 
 
+  @media (max-width: 600px) {
+	.news-card{
+		height: 100%;
+	}
+  }
+
 
 
  
