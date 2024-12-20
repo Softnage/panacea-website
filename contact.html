@@ -177,7 +177,7 @@
                     </li>
                     <li>
                       <a href="wholesale.html"
-                        ><i class="fas fa-warehouse"> </i> Wholesale Division</a
+                        ><i class="fas fa-warehouse"> </i> Wholesale / Distribution </a
                       >
                     </li>
                   </ul>
@@ -192,7 +192,7 @@
                   <ul class="dropdown-submenu">
                     <li>
                       <a href="media.html"
-                        ><i class="fas fa-picture-o"> </i> Corporate Social Responsibility (CSR)</a
+                        ><i class="fas fa-picture-o"> </i> News & Media </a
                       >
                     </li>
                     <li>
@@ -278,7 +278,7 @@
                   <i class="bi bi-geo-fill mr-2"></i>
                   <address class="text-dark">
                     <a href="https://maps.app.goo.gl/oRuu4ctZZbefZghe9" class="text-dark head-address" target="_blank">
-                      PANACEA PHARMACEUTICALS TD<br> 
+                      PANACEA PHARMACEUTICALS LTD.<br> 
                       PO Box KS 11383
   
                       Kumasi<br>
@@ -293,7 +293,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-us-form">
+    <section class="contact-us-form mb-5">
       <div class="container1">
         <div class="form1">
           <div class="contact-info1">
@@ -333,6 +333,31 @@
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </div>
+            </div>
+
+            <!-- advert-report -->
+            <div class="form-container">
+              <h3>Report Advert Reactions</h3>
+              <form action="send_email.php" method="post" class="advert-form">
+                  <label for="ad-details">Ad Details (if known):</label>
+                  <textarea id="ad-details" name="ad_details" placeholder="Describe the ad..."></textarea>
+      
+                  <label for="reaction-type">What would you like to report?</label>
+                  <select id="reaction-type" name="reaction_type" required>
+                      <option value="" disabled selected>Select a reaction type</option>
+                      <option value="positive">I liked the ad</option>
+                      <option value="negative">I disliked the ad</option>
+                      <option value="irrelevant">The ad was irrelevant</option>
+                      <option value="offensive">The ad was offensive</option>
+                      <option value="technical">There was a technical issue</option>
+                  </select>
+      
+                  <label for="additional-comments">Additional Comments:</label>
+                  <textarea id="additional-comments" name="additional_comments" placeholder="Provide more details..."></textarea>
+      
+                  <button type="submit">Submit Feedback</button>
+                  <p class="note">We appreciate your feedback. Your report helps us improve user experience!</p>
+              </form>
             </div>
           </div>
 

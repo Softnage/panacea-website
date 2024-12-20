@@ -29,7 +29,7 @@
   }
 
   .contact-form1 {
-    background-color: #1abc9c;
+    /* background-color: #1abc9c; */
     position: relative;
   }
   
@@ -374,3 +374,86 @@
   textarea::placeholder{
     color: white;
   }
+
+
+
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.advert-form{
+  background: white !important;
+}
+
+.form-container h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.form-container textarea,
+.form-container select,
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-container button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.form-container .note {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .form-container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .form-container h3 {
+        font-size: 20px;
+    }
+}

@@ -14288,6 +14288,7 @@ button.btn.btn-link.btn-block:focus {
     font-size: 20px;
     color: var(--primary-color);
   }
+	
   
   .button::after {
     position: absolute;
