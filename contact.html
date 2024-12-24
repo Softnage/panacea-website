@@ -338,7 +338,8 @@
             <!-- advert-report -->
             <div class="form-container">
               <h3>Report Advert Reactions</h3>
-              <form action="send_email.php" method="post" class="advert-form">
+              <form action="" id="form" method="post" class="advert-form">
+                <input type="hidden" name="access_key" value="94aee261-a2db-4f9a-8cf4-d25d11a71ce0">
                   <label for="ad-details">Ad Details (if known):</label>
                   <textarea id="ad-details" name="ad_details" placeholder="Describe the ad..."></textarea>
       
@@ -354,9 +355,10 @@
       
                   <label for="additional-comments">Additional Comments:</label>
                   <textarea id="additional-comments" name="additional_comments" placeholder="Provide more details..."></textarea>
-      
+                  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                   <button type="submit">Submit Feedback</button>
                   <p class="note">We appreciate your feedback. Your report helps us improve user experience!</p>
+                  <div id="result"></div>
               </form>
             </div>
           </div>
@@ -365,7 +367,8 @@
             <span class="circle1 one1"></span>
             <span class="circle1 two1"></span>
 
-            <form  autocomplete="off">
+            <form  autocomplete="off" id="form" method="POST">
+              <input type="hidden" name="access_key" value="94aee261-a2db-4f9a-8cf4-d25d11a71ce0">
               <h3 class="title1 text-white">Contact us</h3>
               <div class="input-container1">
                 <input type="text" name="name" class="input1" placeholder="Name" />
@@ -387,7 +390,10 @@
                 <!-- <label for="">Message</label> -->
                 <span>Message</span>
               </div>
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
               <input type="submit" value="Send" class="btn1" />
+
+              <div id="result"></div>
             </form>
           </div>
         </div>
@@ -567,7 +573,7 @@
         </div>
         <!-- <a href="#" class="go-top"><i class="fas fa-arrow-up"></i></a> -->
     </footer>
-
+    <script src="assets/js/forms.js"></script>
     <script src="assets/js/app.js"></script>
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
