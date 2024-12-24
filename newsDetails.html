@@ -26,6 +26,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <style>
+      .news-content{
+        text-align: justify;
+      }
+    </style>
   </head>
 
   <body>
@@ -211,19 +217,33 @@
     <!-- hero-about-area start -->
     <div class="hero-about-area about">
       <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-auto text-center">
-            <div class="hero-about-text text-center">
-              <h2>Blogs</h2>
-              <h4>
-                <div class="mini-links py-2">Home / <a href="#">Blogs</a></div>
-              </h4>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about-content text-center">
+                <h1 class="text-white">News Details</h1>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- hero-about-area End -->
+    <!-- hero-about-area end -->
+
+    <!-- News Content Area -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="news-title"></h1>
+              <p class="news-date text-muted"></p>
+          <div class="text-center mb-4">
+            <img src="" alt="" class="news-image img-fluid rounded">
+          </div>
+          <div class="news-content">
+            <!-- Content will be loaded dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News Content Area End -->
 
     <!-- News blog area Start -->
     <div class="advance-area py-5">
@@ -308,7 +328,7 @@
                 <ul class="text-foot">
                   <li><a href="faq.html">FAQ</a></li>
                   <li><a href="retaildivision.html">Retail Division</a></li>
-                  <li><a href="wholesale.html">Wholesale / Distribution</a></li>
+                  <li><a href="wholesale.html">Wholesale Division</a></li>
                 </ul>
               </div>
             </div>
@@ -359,7 +379,7 @@
       <div class="footer-bottom">
         <div class="container text-center">
           <p>
-            2024 © all rights reserved by
+            2024 &copy; all rights reserved by
             <a href="#" class="text-white">Panacea Pharmaceuticals Ltd</a>
           </p>
         </div>
@@ -372,10 +392,11 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
     ></script>
-    <!-- firebase -->
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
-    <script src="assets/js/firebase.js" defer></script>
+    <script src="assets/js/firebase.js"></script>
+    <script src="assets/js/newsDetails.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery.min.js" defer></script>
     <script src="assets/js/popper.js" defer></script>
