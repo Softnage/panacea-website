@@ -37,3 +37,10 @@ form.addEventListener('submit', function (e) {
     }, 3000);
   });
 });
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ContactForm from './contact-form';
+
+ReactDOM.render(<ContactForm />, document.getElementById('contact-form-root'));
